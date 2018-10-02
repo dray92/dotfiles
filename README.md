@@ -1,2 +1,2 @@
 # dotfiles
-Collection of bootstrap scripts and dotfiles to maintain configuration across machines
+Setting up new machines is starting to get a little painful; this is to maintain a semblance of sanity.
