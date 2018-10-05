@@ -5,6 +5,7 @@ _install_virtual_environments () {
   for pkg in "${pkgs[@]}" ; do
     brew cask install "${pkg}" || brew cask upgrade "${pkg}"
   done
+  vagrant plugin install vagrant-disksize
 }
 
 _install_virtual_environments
