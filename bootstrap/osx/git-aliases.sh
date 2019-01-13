@@ -11,6 +11,7 @@ alias gcheck="git checkout"
 alias gb="git branch"
 alias gpull="git pull"
 alias gpush="git push"
+alias gl="git log --graph --pretty=format:'%C(blue)%ai %C(yellow)%H %C(green)%an %C(red)%s'"
 
 EOF
 }
