@@ -4,7 +4,7 @@
 # brew cask install java
 
 brew tap caskroom/versions
-brew cask install java8
+brew cask install adoptopenjdk/openjdk/adoptopenjdk8
 
 brew install maven gradle
 
