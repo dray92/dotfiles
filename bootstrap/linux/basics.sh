@@ -1,7 +1,7 @@
 #!/bin/bash
 
 _install_basics () {
-	cat <<EOF >> $HOME/.bash_profile
+	cat <<EOF >> $HOME/.bashrc
 
 ##
 #-----------External IP--------
@@ -14,4 +14,4 @@ EOF
 
 _install_basics
 
-printf "\033[0;31mRun '. $HOME/.bash_profile'\033[0m\n"
+printf "\033[0;31mRun '. $HOME/.bashrc'\033[0m\n"
