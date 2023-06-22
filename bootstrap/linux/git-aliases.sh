@@ -12,7 +12,7 @@ alias gb="git branch"
 alias gpull="git pull"
 alias gpush="git push"
 alias gl="git log --graph --pretty=format:'%C(blue)%ai %C(yellow)%H %C(green)%an %C(red)%s'"
-alias gpusho="gpush origin \$(git branch --show-current)"
+alias gpusho="git push origin \$(git branch --show-current)"
 
 ##
 #----------Git branch--------
