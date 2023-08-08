@@ -21,6 +21,9 @@ alias gpush="git push"
 alias gl="git log --graph --pretty=format:'%C(blue)%ai %C(yellow)%H %C(green)%an %C(red)%s'"
 alias gpusho="git push origin \$(parse_git_branch)"
 
+function jump(){
+    aws ssm start-session --target $(aws ec2 describe-instances --filters 'Name=instance-state-name,Values=running' 'Name=tag:Name,Values=production-v2-jumphost'  --output text --query 'Reservations[*].Instances[*].InstanceId' --region us-west-2) --region us-west-2
+}
 
 export PS1="\u@\h \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
 
