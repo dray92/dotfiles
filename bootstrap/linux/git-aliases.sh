@@ -30,6 +30,12 @@ export PS1="\u@\h \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
 EOF
 }
 
+sudo apt-get install -y fontconfig || sudo apt-get update && sudo apt-get install -y fontconfig
+curl -sS https://raw.githubusercontent.com/diogocavilha/fancy-git/master/install.sh | sh
+bash -i -c 'fancygit --suggested-global-git-config-apply'
+bash -i -c 'fancygit --theme-human'
+bash -i -c 'fancygit --enable-host-name'
+
 _install_git_aliases
 
 printf "\033[0;31mRun '. $HOME/.bashrc'\033[0m\n"
