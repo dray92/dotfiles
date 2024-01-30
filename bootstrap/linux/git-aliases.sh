@@ -33,7 +33,7 @@ EOF
 sudo apt-get install -y fontconfig || sudo apt-get update && sudo apt-get install -y fontconfig
 curl -sS https://raw.githubusercontent.com/diogocavilha/fancy-git/master/install.sh | sh
 bash -i -c 'fancygit --suggested-global-git-config-apply'
-bash -i -c 'fancygit --theme-human'
+bash -i -c 'fancygit --theme-human' && source $HOME/.bashrc
 bash -i -c 'fancygit --enable-host-name'
 
 _install_git_aliases
