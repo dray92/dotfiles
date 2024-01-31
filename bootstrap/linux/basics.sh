@@ -8,6 +8,10 @@ _install_basics () {
 ##
 alias curr_ip="curl -s http://checkip.dyndns.org/ | sed 's/[a-zA-Z<>/ :]//g'"
 
+##
+#-----------du w/ sorting--------
+##
+alias my_du="du -k -d1 * | sort -nr | cut -f2 | xargs -d '\n' du -sh"
 
 EOF
 }
