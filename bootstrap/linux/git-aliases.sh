@@ -20,6 +20,9 @@ alias gpull="git pull"
 alias gpush="git push"
 alias gl="git log --graph --pretty=format:'%C(blue)%ai %C(yellow)%H %C(green)%an %C(red)%s'"
 alias gpusho="git push origin \$(parse_git_branch)"
+
+alias dive="docker run -ti --rm  -v /var/run/docker.sock:/var/run/docker.sock wagoodman/dive"
+
 export EDITOR=vi
 
 function jump(){
