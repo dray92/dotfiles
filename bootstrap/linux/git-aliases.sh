@@ -24,6 +24,7 @@ alias gpusho="git push origin \$(parse_git_branch)"
 alias dive="docker run -ti --rm  -v /var/run/docker.sock:/var/run/docker.sock wagoodman/dive"
 
 export EDITOR=vi
+export PAGER=cat
 
 function jump(){
     aws ssm start-session --target $(aws ec2 describe-instances --filters 'Name=instance-state-name,Values=running' 'Name=tag:Name,Values=production-v2-jumphost'  --output text --query 'Reservations[*].Instances[*].InstanceId' --region us-west-2) --region us-west-2
